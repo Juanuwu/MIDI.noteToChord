@@ -14,14 +14,14 @@ E:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.pdb
 F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\midi.exe.config
 F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\midi.exe
 F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\midi.pdb
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.dll
 F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\NAudio.dll
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.xml
 F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\NAudio.xml
-F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.csprojAssemblyReference.cache
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.Form1.resources
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.Properties.Resources.resources
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.csproj.GenerateResource.cache
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.csproj.CopyComplete
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.exe
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.pdb
-F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.dll
-F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.xml
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Debug\midi.csprojAssemblyReference.cache

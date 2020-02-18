@@ -1,0 +1,14 @@
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\midi.exe.config
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\midi.exe
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\midi.pdb
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\Melanchall.DryWetMidi.dll
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\NAudio.dll
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\Melanchall.DryWetMidi.xml
+F:\Juan\Documents\Documentos\C#\midi\midi\bin\Release\NAudio.xml
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csprojAssemblyReference.cache
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.Form1.resources
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.Properties.Resources.resources
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csproj.GenerateResource.cache
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csproj.CopyComplete
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.exe
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.pdb
