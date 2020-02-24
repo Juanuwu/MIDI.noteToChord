@@ -1,0 +1,109 @@
+﻿'midi.exe' (Win32): 'F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\midi.exe' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\ntdll.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\mscoree.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\kernel32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\KernelBase.dll' cargado. 
+El subproceso 0x5b74 terminó con código 0 (0x0).
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\advapi32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\msvcrt.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\sechost.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\rpcrt4.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\sspicli.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\cryptbase.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\bcryptprimitives.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\shlwapi.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\combase.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\ucrtbase.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\gdi32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\win32u.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\gdi32full.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\msvcp_win.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\user32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\imm32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\kernel.appcore.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\version.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\vcruntime140_clr0400.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\ucrtbase_clr0400.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\psapi.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\psapi.dll' descargado
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\92d30f3dd1d092e15dd783b14354d8ea\mscorlib.ni.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: DefaultDomain): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\ole32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\uxtheme.dll' cargado. 
+'midi.exe' (Win32): 'C:\Program Files (x86)\EventGhost\plugins\Task\hook.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: DefaultDomain): 'F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\midi.exe' cargado. Símbolos cargados.
+'midi.exe' (Win32): 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\oleaut32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System\fe540975c21bb6f0b57e398ee683b7c4\System.ni.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\7789cb0b419ace0cde1f30d9ea838f4a\System.Drawing.ni.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\b777e84afac991baeea34dc7b464334e\System.Windows.Forms.ni.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Core\8cec84ecb3d50ccbba63dc64d18eefaf\System.Core.ni.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll' cargado. 
+'midi.exe' (Win32): 'F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.dll' cargado. 
+'midi.exe' (Win32): 'F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.dll' cargado. 
+'midi.exe' (Win32): 'F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.dll' descargado
+'midi.exe' (CLR v4.0.30319: midi.exe): 'F:\Juan\Documents\Documentos\C#\midi\midi\bin\Debug\Melanchall.DryWetMidi.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Configuration\132a9ec10529cb2fbc9954f9d763f049\System.Configuration.ni.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Xml\8d4bbd14b198a87068a91066b2e86125\System.Xml.ni.dll' cargado. 
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\shell32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\cfgmgr32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\SHCore.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\windows.storage.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\profapi.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\powrprof.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\umpdc.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\cryptsp.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\bcrypt.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\rsaenh.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.18362.657_none_71d521d55ae5c7cf\comctl32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.657_none_5f5ddf35821cdb6c\GdiPlus.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\DWrite.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\msctf.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\winmm.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\winmmbase.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\winmmbase.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\winmmbase.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\winmmbase.dll' descargado
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\winmmbase.dll' descargado
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\MMDevAPI.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\devobj.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\wdmaud.drv' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\ksuser.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\avrt.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\AudioSes.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\WinTypes.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\msacm32.drv' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\msacm32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\midimap.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.657_none_2e72ec50278a619e\comctl32.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\TextInputFramework.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\CoreMessaging.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\CoreUIComponents.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\ntmarta.dll' cargado. 
+'midi.exe' (Win32): 'C:\Windows\SysWOW64\iertutil.dll' cargado. 
+El subproceso 0x5430 terminó con código 0 (0x0).
+'midi.exe' (Win32): 'C:\Windows\Microsoft.NET\assembly\GAC_MSIL\mscorlib.Resources\v4.0_4.0.0.0_es_b77a5c561934e089\mscorlib.resources.dll' cargado. El módulo se compiló sin símbolos.
+'midi.exe' (Win32): 'C:\Windows\Microsoft.NET\assembly\GAC_MSIL\mscorlib.Resources\v4.0_4.0.0.0_es_b77a5c561934e089\mscorlib.resources.dll' cargado. El módulo se compiló sin símbolos.
+'midi.exe' (Win32): 'C:\Windows\Microsoft.NET\assembly\GAC_MSIL\mscorlib.Resources\v4.0_4.0.0.0_es_b77a5c561934e089\mscorlib.resources.dll' descargado
+'midi.exe' (CLR v4.0.30319: midi.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_es_b77a5c561934e089\mscorlib.resources.dll' cargado. El módulo se compiló sin símbolos.
+El subproceso 0x55c0 terminó con código 0 (0x0).
+El subproceso 0x1e68 terminó con código 0 (0x0).
+El subproceso 0x58d0 terminó con código 0 (0x0).
+El subproceso 0x4e54 terminó con código 0 (0x0).
+El subproceso 0x57b0 terminó con código 0 (0x0).
+El subproceso 0x1798 terminó con código 0 (0x0).
+El subproceso 0x5bac terminó con código 0 (0x0).
+El subproceso 0x459c terminó con código 0 (0x0).
+El subproceso 0x45b0 terminó con código 0 (0x0).
+El subproceso 0x1a48 terminó con código 0 (0x0).
+El subproceso 0x4b54 terminó con código 0 (0x0).
+El subproceso 0x4674 terminó con código 0 (0x0).
+El subproceso 0x54b4 terminó con código 0 (0x0).
+El programa '[18236] midi.exe' terminó con código 0 (0x0).
