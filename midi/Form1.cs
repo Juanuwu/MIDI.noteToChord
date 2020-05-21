@@ -85,7 +85,7 @@ namespace midi
            
         }
 
-        
+        //TODO: agregar notas a una lista cuando llega un evento on y eliminarlas cuando llega el evento off, para tener lista de todas las teclas presionadas en un determinado momento
 
         private void OnEventReceived(object sender, MidiEventReceivedEventArgs e)
         {
