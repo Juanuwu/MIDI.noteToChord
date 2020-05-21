@@ -11,19 +11,10 @@ using System.Threading.Tasks;
 
 namespace midi
 {
-    public static class Globals
-    {
-        public static InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
-    }
+    
 
     public partial class Form1 : Form
     {
-
-
-
-        
-
-
 
         public Form1()
         {
@@ -46,32 +37,22 @@ namespace midi
             string[] notasTotal = negrasReturn.Concat(blancasReturn).ToArray();
 
 
-
-
             Globals.inputDevice.EventReceived += OnEventReceived;
             Globals.inputDevice.StartEventsListening();
 
            
-
-           
-
+        }
 
 
-
-
-
-            //inputDevice.EventReceived += (object sender, MidiEventReceivedEventArgs e) => OnEventReceived(sender, e, Negras, blancas);
-            //inputDevice.StartEventsListening();
-
-
+        public static class Globals
+        {
+            public static InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
         }
 
 
 
-
-       
-
-
+        // funcion que ya no tiene uso, pero no la voy a borrar por si me olvido algo, era para que las notas dejaran de estar en color cuando tocas la siguiente, pero ahora lo hacen con el
+        //evento off
         private void uwu()
         {
             String[] Negras = { "C#", "D#", "_", "F#", "G#", "A#", "_" };
@@ -108,22 +89,53 @@ namespace midi
 
         private void OnEventReceived(object sender, MidiEventReceivedEventArgs e)
         {
+            String[] Negras = { "C#", "D#", "_", "F#", "G#", "A#", "_" };
+            String[] blancas = { "C", "D", "E", "F", "G", "A", "B" };
 
-            label1.Text = Thread.CurrentThread.Name;
-            
-            uwu();
-            
+
             string entrada = e.Event.ToString();
             string notaFinal = entrada.Split('(', ',')[1];
+            bool on = false;
 
+
+            if (entrada.Contains("On"))
+                on = true;
+            else if(entrada.Contains("Off"))
+                on = false;
+
+            label1.Text = on.ToString();
             string salida = (Note.Get((SevenBitNumber)Int32.Parse(notaFinal)).ToString());
             salida = salida.Remove(salida.Length - 1);
 
-            notaSalida.Text = salida;
+            notaSalida.Text = entrada;
+           
             foreach (Button p in panel1.Controls)
-                if (p.Name == salida)
+                if (p.Name == salida && on == true)
                 {
                     p.BackColor = Color.AliceBlue;
+
+                }
+                else if (p.Name == salida && on == false)
+                    {
+                    foreach (string thing in Negras)
+                    {
+                        if (p.Name == thing)
+                        {
+
+                            p.BackColor = Color.Black;
+
+                        }
+                    }
+
+                    foreach (string thing in blancas)
+                    {
+                        if (p.Name == thing)
+                        {
+
+                            p.BackColor = Color.White;
+                        }
+                    }
+
 
                 }
 
