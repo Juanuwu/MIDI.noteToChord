@@ -95,7 +95,7 @@ namespace midi
 
 
 
-        int i = 0;
+        
 
         private void OnEventReceived(object sender, MidiEventReceivedEventArgs e)
         {
@@ -115,30 +115,33 @@ namespace midi
             salida = salida.Remove(salida.Length - 1);
 
 
+            //registro de tipo de evento y notas activas
             if (entrada.Contains("On"))
             {
                 on = true;
+                activas.Add(salida);
+                label1.Text = activas.Count().ToString();
             }
             else if (entrada.Contains("Off"))
             {
                 on = false;
+                activas.RemoveAll(x => x == salida);
+                label1.Text = activas.Count().ToString();
             }
 
-            notaSalida.Text = entrada;
+            notaSalida.Text = salida;
             
+
+            //cambio de colores en la interfaz
             foreach (Button p in panel1.Controls)
                 if (p.Name == salida && on == true)
                 {
                     p.BackColor = Color.AliceBlue;
-                    activas.Add(salida);
-                    label1.Text = activas.Count().ToString();
                     
-
                 }
                 else if (p.Name == salida && on == false)
                     {
-                    activas.RemoveAll(x => x == salida);
-                    label1.Text = activas.Count().ToString();
+                    
 
                     foreach (string thing in Negras)
                     {
@@ -147,10 +150,6 @@ namespace midi
 
                             p.BackColor = Color.Black;
                             
-
-
-
-
                         }
                     }
 
