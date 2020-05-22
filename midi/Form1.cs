@@ -8,6 +8,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace midi
 {
@@ -47,9 +48,10 @@ namespace midi
         public static class Globals
         {
             public static InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
+            
         }
 
-
+        
 
         // funcion que ya no tiene uso, pero no la voy a borrar por si me olvido algo, era para que las notas dejaran de estar en color cuando tocas la siguiente, pero ahora lo hacen con el
         //evento off
@@ -82,47 +84,72 @@ namespace midi
                 }
             }
 
-           
+            
+
         }
 
         //TODO: agregar notas a una lista cuando llega un evento on y eliminarlas cuando llega el evento off, para tener lista de todas las teclas presionadas en un determinado momento
+
+        List<string> activas = new List<string>();
+
+
+
+
+        int i = 0;
 
         private void OnEventReceived(object sender, MidiEventReceivedEventArgs e)
         {
             String[] Negras = { "C#", "D#", "_", "F#", "G#", "A#", "_" };
             String[] blancas = { "C", "D", "E", "F", "G", "A", "B" };
-
+            
 
             string entrada = e.Event.ToString();
             string notaFinal = entrada.Split('(', ',')[1];
             bool on = false;
 
+            
 
-            if (entrada.Contains("On"))
-                on = true;
-            else if(entrada.Contains("Off"))
-                on = false;
 
-            label1.Text = on.ToString();
+            
             string salida = (Note.Get((SevenBitNumber)Int32.Parse(notaFinal)).ToString());
             salida = salida.Remove(salida.Length - 1);
 
+
+            if (entrada.Contains("On"))
+            {
+                on = true;
+            }
+            else if (entrada.Contains("Off"))
+            {
+                on = false;
+            }
+
             notaSalida.Text = entrada;
-           
+            
             foreach (Button p in panel1.Controls)
                 if (p.Name == salida && on == true)
                 {
                     p.BackColor = Color.AliceBlue;
+                    activas.Add(salida);
+                    label1.Text = activas.Count().ToString();
+                    
 
                 }
                 else if (p.Name == salida && on == false)
                     {
+                    activas.RemoveAll(x => x == salida);
+                    label1.Text = activas.Count().ToString();
+
                     foreach (string thing in Negras)
                     {
                         if (p.Name == thing)
                         {
 
                             p.BackColor = Color.Black;
+                            
+
+
+
 
                         }
                     }
@@ -133,11 +160,16 @@ namespace midi
                         {
 
                             p.BackColor = Color.White;
+                            
+
                         }
                     }
 
 
                 }
+
+
+            
 
 
         }

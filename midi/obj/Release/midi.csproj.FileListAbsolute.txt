@@ -11,3 +11,4 @@ F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csproj.GenerateResour
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csproj.CopyComplete
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.exe
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.pdb
+F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csprojAssemblyReference.cache
