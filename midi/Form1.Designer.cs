@@ -39,9 +39,9 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(21, 122);
+            this.panel1.Location = new System.Drawing.Point(12, 122);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1181, 312);
+            this.panel1.Size = new System.Drawing.Size(1410, 312);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -62,13 +62,12 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1223, 446);
+            this.ClientSize = new System.Drawing.Size(1425, 446);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);

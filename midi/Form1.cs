@@ -23,11 +23,8 @@ namespace midi
 
             InitializeComponent();
             TextBox.CheckForIllegalCrossThreadCalls = false;
-
-
-             String[] Negras = { "C#", "D#", "_", "F#", "G#", "A#", "_" };
-             String[] blancas = { "C", "D", "E", "F", "G", "A", "B" };
-
+            String[] Negras = { "37", "39", "_", "42", "44", "46", "_", "49", "51", "_", "54", "56", "58", "_", "61", "63", "_", "66", "68", "70", "_", "73", "75", "_", "78", "80", "82", "_", };
+            String[] blancas = { "36", "38", "40", "41", "43", "45", "47", "48", "50", "52", "53", "55", "57", "59", "60", "62", "64", "65", "67", "69", "71", "72", "74", "76", "77", "79", "81", "83" };
 
 
             String[] total = new string[blancas.Length + Negras.Length];
@@ -53,40 +50,7 @@ namespace midi
 
         
 
-        // funcion que ya no tiene uso, pero no la voy a borrar por si me olvido algo, era para que las notas dejaran de estar en color cuando tocas la siguiente, pero ahora lo hacen con el
-        //evento off
-        private void uwu()
-        {
-            String[] Negras = { "C#", "D#", "_", "F#", "G#", "A#", "_" };
-            String[] blancas = { "C", "D", "E", "F", "G", "A", "B" };
-
-            foreach (Button p in panel1.Controls)
-                
-            {
-
-                foreach (string thing in Negras)
-                {
-                    if (p.Name == thing)
-                    {
-
-                        p.BackColor = Color.Black;
-
-                    }
-                }
-
-                foreach (string thing in blancas)
-                {
-                    if (p.Name == thing)
-                    {
-
-                        p.BackColor = Color.White;
-                    }
-                }
-            }
-
-            
-
-        }
+       
 
         //TODO: agregar notas a una lista cuando llega un evento on y eliminarlas cuando llega el evento off, para tener lista de todas las teclas presionadas en un determinado momento
 
@@ -99,20 +63,17 @@ namespace midi
 
         private void OnEventReceived(object sender, MidiEventReceivedEventArgs e)
         {
-            String[] Negras = { "C#", "D#", "_", "F#", "G#", "A#", "_" };
-            String[] blancas = { "C", "D", "E", "F", "G", "A", "B" };
-            
+            String[] Negras = { "37", "39", "_", "42", "44", "46", "_", "49", "51", "_", "54", "56", "58", "_", "61", "63", "_", "66", "68", "70", "_", "73", "75", "_", "78", "80", "82", "_", };
+            String[] blancas = { "36", "38", "40", "41", "43", "45", "47", "48", "50", "52", "53", "55", "57", "59", "60", "62", "64", "65", "67", "69", "71", "72", "74", "76", "77", "79", "81", "83" };
 
             string entrada = e.Event.ToString();
             string notaFinal = entrada.Split('(', ',')[1];
             bool on = false;
 
             
-
-
-            
             string salida = (Note.Get((SevenBitNumber)Int32.Parse(notaFinal)).ToString());
             salida = salida.Remove(salida.Length - 1);
+            //salida = entrada;
 
 
             //registro de tipo de evento y notas activas
@@ -134,12 +95,12 @@ namespace midi
 
             //cambio de colores en la interfaz
             foreach (Button p in panel1.Controls)
-                if (p.Name == salida && on == true)
+                if (p.Name == notaFinal && on == true)
                 {
                     p.BackColor = Color.AliceBlue;
                     
                 }
-                else if (p.Name == salida && on == false)
+                else if (p.Name == notaFinal && on == false)
                     {
                     
 
