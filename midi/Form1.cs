@@ -52,11 +52,6 @@ namespace midi
 
 
 
-
-
-
-
-
         public static class Globals
         {
             public static InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
@@ -70,12 +65,6 @@ namespace midi
 
         List<string> activas = new List<string>();
         List<Melanchall.DryWetMidi.MusicTheory.Note> notasAcorde = new List<Note>();
-
-
-
-
-
-
 
 
 
@@ -103,7 +92,8 @@ namespace midi
                 activas.Add(notaFinal);
                 var notita = Note.Get((SevenBitNumber)Int32.Parse(notaFinal));
                 notasAcorde.Add(notita);
-                label1.Text = notasAcorde.Count().ToString();
+                PostRequestChord(salida);
+                //label1.Text = notasAcorde.Count().ToString();
 
 
             }
@@ -111,9 +101,9 @@ namespace midi
             {
                 on = false;
                 activas.RemoveAll(x => x == notaFinal);
-                var nota1 = Note.Get((SevenBitNumber)Int32.Parse(notaFinal));
-                notasAcorde.Remove(nota1);
-                label1.Text = notasAcorde.Count().ToString();
+                // label1.Text = notasAcorde.Count().ToString();
+                string pito = notaFinal + "c";
+                PostRequestChord(pito);
             }
 
             notaSalida.Text = salida;
@@ -181,7 +171,11 @@ namespace midi
             Console.WriteLine(html);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+
+
+        private void PostRequestChord(string nota)
         {
 
 
@@ -191,8 +185,7 @@ namespace midi
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = "test";
-
+                string json = nota;
                 streamWriter.Write(json);
             }
 
@@ -200,6 +193,7 @@ namespace midi
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
+                label1.Text = result;
                 Console.WriteLine(result);
 ;            }
         }

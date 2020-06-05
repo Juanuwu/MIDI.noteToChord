@@ -5,11 +5,18 @@ from music21 import *
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+global counter
+counter = 0
+notasActivas = []
+notasNombre = []
+
+
+    
 
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    myChord = chord.Chord('A4 C#5 E5')
+    
 
     if request.method == 'GET':
         """return the information for <user_id>"""
@@ -22,8 +29,50 @@ def home():
         # changed to be int or whatever you want, along
         # with your lxml knowledge to make the required
         # changes
-        data = request.data
-        return data
+        if "c"  in request.data: 
+            del notasActivas[:]
+            del notasNombre[:]
+            return str(len(notasNombre))
+        
+        
+        notasActivas.append(request.data)
+        
+        
+        for nota in notasActivas:
+            
+            p = pitch.Pitch(nota)
+            p = p.name
+            if p in notasNombre:
+
+                test = 1
+                
+            else:
+                notasNombre.append(p)
+                
+            
+
+        str1 = ' '.join(notasNombre)
+        
+        for notas in notasNombre:
+            print(notas)
+
+           
+        myChord = chord.Chord(notasNombre)
+        
+        return myChord.pitchedCommonName
+        
+
+
+
+
+        
+        #return notasActivas[counter-1]
+
+        
+        
+        
+    
+        
         
         
         
