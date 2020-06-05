@@ -1,6 +1,7 @@
 import flask
 from flask import request,jsonify
 from music21 import *
+from pychord import note_to_chord
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -56,10 +57,16 @@ def home():
         for notas in notasNombre:
             print(notas)
 
-           
-        myChord = chord.Chord(notasNombre)
+        if str(note_to_chord(notasNombre)) == "[]":
+            test = chord.Chord(notasNombre)
         
-        return myChord.pitchedCommonName
+            return test.pitchedCommonName
+
+        else:   
+            myChord = note_to_chord(notasNombre)
+            print(str(myChord))
+        
+            return str(myChord)
         
 
 
