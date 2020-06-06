@@ -1,9 +1,7 @@
 ﻿using Melanchall.DryWetMidi.Common;
 using Melanchall.DryWetMidi.Devices;
-
 using System.IO;
 using System.Diagnostics;
-
 using Melanchall.DryWetMidi.MusicTheory;
 using System;
 using System.Drawing;
@@ -29,8 +27,8 @@ namespace midi
             InitializeComponent();
 
 
+            
 
-            TextBox.CheckForIllegalCrossThreadCalls = false;
             String[] Negras = { "37", "39", "_", "42", "44", "46", "_", "49", "51", "_", "54", "56", "58", "_", "61", "63", "_", "66", "68", "70", "_", "73", "75", "_", "78", "80", "82", "_", };
             String[] blancas = { "36", "38", "40", "41", "43", "45", "47", "48", "50", "52", "53", "55", "57", "59", "60", "62", "64", "65", "67", "69", "71", "72", "74", "76", "77", "79", "81", "83" };
 
@@ -41,23 +39,49 @@ namespace midi
             string[] negrasReturn = teclado.CrearTeclasNegras(Negras, panel1);
             string[] blancasReturn = teclado.CrearTeclasBlancas(blancas, panel1);
             string[] notasTotal = negrasReturn.Concat(blancasReturn).ToArray();
+            
+            try
+            {
+                TextBox.CheckForIllegalCrossThreadCalls = false;
+                InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
+                inputDevice.EventReceived += OnEventReceived;
+                inputDevice.StartEventsListening();
+
+            }
 
 
-            Globals.inputDevice.EventReceived += OnEventReceived;
-            Globals.inputDevice.StartEventsListening();
+            catch
+            {
+                Console.WriteLine("uwu");
+            }
+
 
 
         }
 
-
-
-
-        public static class Globals
+        private void button1_Click(object sender, EventArgs e)
         {
-            public static InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
+            
+            try
+            {
+                TextBox.CheckForIllegalCrossThreadCalls = false;
+                InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
+                inputDevice.EventReceived += OnEventReceived;
+                inputDevice.StartEventsListening();
+
+            }
+
+
+            catch
+            {
+                Console.WriteLine("uwu");
+            }
 
 
         }
+
+
+        
 
 
 
