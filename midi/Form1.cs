@@ -81,7 +81,13 @@ namespace midi
         }
 
 
-        
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                // Do some stuff
+            }
+        }
 
 
 
