@@ -1,33 +1,31 @@
 ﻿using Melanchall.DryWetMidi.Common;
 using Melanchall.DryWetMidi.Devices;
 using System.IO;
-using System.Diagnostics;
 using Melanchall.DryWetMidi.MusicTheory;
+using Melanchall.DryWetMidi;
 using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Net;
-using System.Text;
+
 
 namespace midi
 {
-
+    
 
     public partial class Form1 : Form
     {
+
+       
+
 
         public Form1()
         {
 
 
             InitializeComponent();
-
-
-            
 
             String[] Negras = { "37", "39", "_", "42", "44", "46", "_", "49", "51", "_", "54", "56", "58", "_", "61", "63", "_", "66", "68", "70", "_", "73", "75", "_", "78", "80", "82", "_", };
             String[] blancas = { "36", "38", "40", "41", "43", "45", "47", "48", "50", "52", "53", "55", "57", "59", "60", "62", "64", "65", "67", "69", "71", "72", "74", "76", "77", "79", "81", "83" };
@@ -43,9 +41,10 @@ namespace midi
             try
             {
                 TextBox.CheckForIllegalCrossThreadCalls = false;
-                InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
-                inputDevice.EventReceived += OnEventReceived;
-                inputDevice.StartEventsListening();
+                Globals.inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
+                Globals.inputDevice.EventReceived += OnEventReceived;
+                Globals.inputDevice.StartEventsListening();
+                
 
             }
 
@@ -59,26 +58,13 @@ namespace midi
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        public static class Globals
         {
-            
-            try
-            {
-                TextBox.CheckForIllegalCrossThreadCalls = false;
-                InputDevice inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
-                inputDevice.EventReceived += OnEventReceived;
-                inputDevice.StartEventsListening();
-
-            }
-
-
-            catch
-            {
-                Console.WriteLine("uwu");
-            }
-
-
+            public static InputDevice inputDevice;
         }
+
+        
 
 
         private void Form1_Resize(object sender, EventArgs e)
