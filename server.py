@@ -30,13 +30,14 @@ def home():
         # changed to be int or whatever you want, along
         # with your lxml knowledge to make the required
         # changes
-        if "c"  in request.data: 
+        test = request.data.decode()
+        if "c"  in test: 
             del notasActivas[:]
             del notasNombre[:]
             return str(len(notasNombre))
         
         
-        notasActivas.append(request.data)
+        notasActivas.append(test)
         
         
         for nota in notasActivas:
