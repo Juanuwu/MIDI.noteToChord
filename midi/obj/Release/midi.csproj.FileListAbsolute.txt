@@ -10,3 +10,16 @@ F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.exe
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.pdb
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.csprojAssemblyReference.cache
 F:\Juan\Documents\Documentos\C#\midi\midi\obj\Release\midi.Form1.resources
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\bin\Release\midi.exe.config
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\bin\Release\midi.exe
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\bin\Release\midi.pdb
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\bin\Release\Melanchall.DryWetMidi.dll
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\bin\Release\Melanchall.DryWetMidi.xml
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.csproj.AssemblyReference.cache
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.Form1.resources
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.Properties.Resources.resources
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.csproj.GenerateResource.cache
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.csproj.CoreCompileInputs.cache
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.csproj.CopyComplete
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.exe
+D:\Documentos\Programación\Lenguajes\C#\midi\midi\obj\Release\midi.pdb

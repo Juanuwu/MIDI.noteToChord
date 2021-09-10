@@ -54,8 +54,8 @@
     <ApplicationIcon>Chrisbanks2-Cold-Fusion-Hd-Piano.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Melanchall.DryWetMidi, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Melanchall.DryWetMidi.5.1.0\lib\net45\Melanchall.DryWetMidi.dll</HintPath>
+    <Reference Include="Melanchall.DryWetMidi, Version=5.2.1.0, Culture=neutral, PublicKeyToken=83d0ffad275219ad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Melanchall.DryWetMidi.5.2.1\lib\net45\Melanchall.DryWetMidi.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
@@ -71,7 +71,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
