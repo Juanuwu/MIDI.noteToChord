@@ -13,12 +13,12 @@ using System.Net;
 
 namespace midi
 {
-    
+
 
     public partial class Form1 : Form
     {
 
-       
+
 
 
         public Form1()
@@ -37,25 +37,9 @@ namespace midi
             string[] negrasReturn = teclado.CrearTeclasNegras(Negras, panel1);
             string[] blancasReturn = teclado.CrearTeclasBlancas(blancas, panel1);
             string[] notasTotal = negrasReturn.Concat(blancasReturn).ToArray();
-            
-            try
-            {
-                TextBox.CheckForIllegalCrossThreadCalls = false;
-                Globals.inputDevice = InputDevice.GetByName("CASIO USB-MIDI");
-                Globals.inputDevice.EventReceived += OnEventReceived;
-                Globals.inputDevice.StartEventsListening();
-                
-
-            }
 
 
-            catch
-            {
-                Console.WriteLine("uwu");
-            }
-
-
-
+            getDevice();
         }
 
 
@@ -64,20 +48,36 @@ namespace midi
             public static InputDevice inputDevice;
         }
 
-        
 
+        private void getDevice()
+            {
+
+            try
+            {
+                TextBox.CheckForIllegalCrossThreadCalls = false;
+                Globals.inputDevice = InputDevice.GetById(0);
+                Globals.inputDevice.EventReceived += OnEventReceived;
+                Globals.inputDevice.StartEventsListening();
+            }
+
+            catch
+            {
+
+            }
+               
+            
+            }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Minimized)
-            {
-                // Do some stuff
-            }
+            
+                
+            
         }
 
 
 
-        //TODO: agregar notas a una lista cuando llega un evento on y eliminarlas cuando llega el evento off, para tener lista de todas las teclas presionadas en un determinado momento
+       
 
         List<string> activas = new List<string>();
         List<Melanchall.DryWetMidi.MusicTheory.Note> notasAcorde = new List<Note>();
@@ -98,7 +98,6 @@ namespace midi
 
             string salida = (Note.Get((SevenBitNumber)Int32.Parse(notaFinal)).ToString());
             salida = salida.Remove(salida.Length - 1);
-            //salida = entrada;
 
 
             //registro de tipo de evento y notas activas
@@ -111,15 +110,15 @@ namespace midi
                 PostRequestChord(salida);
                 //label1.Text = notasAcorde.Count().ToString();
 
-
             }
+
             else if (entrada.Contains("Off"))
             {
                 on = false;
                 activas.RemoveAll(x => x == notaFinal);
                 // label1.Text = notasAcorde.Count().ToString();
-                string pito = notaFinal + "c";
-                PostRequestChord(pito);
+                string nota = notaFinal + "c";
+                PostRequestChord(nota);
             }
 
             notaSalida.Text = salida;
@@ -136,9 +135,9 @@ namespace midi
                 {
 
 
-                    foreach (string thing in Negras)
+                    foreach (string nota in Negras)
                     {
-                        if (p.Name == thing)
+                        if (p.Name == nota)
                         {
 
                             p.BackColor = Color.Black;
@@ -146,9 +145,9 @@ namespace midi
                         }
                     }
 
-                    foreach (string thing in blancas)
+                    foreach (string nota in blancas)
                     {
-                        if (p.Name == thing)
+                        if (p.Name == nota)
                         {
 
                             p.BackColor = Color.White;
@@ -178,6 +177,7 @@ namespace midi
             using (Stream stream = response.GetResponseStream())
             using (StreamReader reader = new StreamReader(stream))
             {
+                
                 html = reader.ReadToEnd();
                 label1.Text = html;
 
@@ -214,7 +214,12 @@ namespace midi
 ;            }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            getDevice();
+
+        }
     }
 }
 
