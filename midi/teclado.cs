@@ -6,6 +6,7 @@ namespace midi
 {
     class teclado
     {
+
         public static int AnchoiTeclasNegras = 40;
         public static int AltoTeclasNegras = 250;
 
