@@ -7,7 +7,6 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using Python.Runtime;
 
-
 namespace midi
 {
 
@@ -207,7 +206,7 @@ namespace midi
                         dynamic chord = scope.Get("test");
                         dynamic pychord = scope.Import("pychord");
                         dynamic music21 = scope.Import("music21");
-                        dynamic myChord = pychord.analyzer.note_to_chord(chord);
+                        dynamic myChord = pychord.analyzer.find_chords_from_notes(chord);
 
 
                         if (Convert.ToString(myChord) == "[]")

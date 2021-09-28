@@ -1,0 +1,124 @@
+﻿'midi.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. 
+'midi.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\midi.exe'. Symbols loaded.
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Included.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\netstandard\v4.0_2.0.0.0__cc7b13ffcd2ddd51\netstandard.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Deployment.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Runtime.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Melanchall.DryWetMidi.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Reflection.Emit\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Reflection.Emit.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded '__CodeGenerator_Assembly'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices.RuntimeInformation\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.RuntimeInformation.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll'. 
+Exception thrown: 'System.ArgumentOutOfRangeException' in Melanchall.DryWetMidi.dll
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll'. 
+F
+F
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+Exception thrown: 'System.IO.FileNotFoundException' in mscorlib.dll
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Dynamic\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Dynamic.dll'. 
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp.resources\v4.0_4.0.0.0_es_b03f5f7f11d50a3a\Microsoft.CSharp.resources.dll'. Module was built without symbols.
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'Anonymously Hosted DynamicMethods Assembly'. 
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+Exception thrown: 'Microsoft.CSharp.RuntimeBinder.RuntimeBinderException' in Microsoft.CSharp.dll
+F
+A
+F
+A
+Major Third above F
+C
+F
+A
+C
+[<Chord: F>]
+Ac
+F
+C
+[<Chord: F5>]
+Cc
+F
+F
+Fc
+Exception thrown: 'Python.Runtime.PythonException' in Python.Runtime.dll
+A
+A
+A
+C
+A
+C
+Major Sixth above C
+F
+A
+C
+F
+[<Chord: F/A>]
+Fc
+A
+C
+Major Sixth above C
+Cc
+A
+A
+Ac
+Exception thrown: 'Python.Runtime.PythonException' in Python.Runtime.dll
+F
+F
+F
+A
+F
+A
+Major Third above F
+C
+F
+A
+C
+[<Chord: F>]
+Ac
+F
+C
+[<Chord: F5>]
+Fc
+C
+C
+Cc
+Exception thrown: 'Python.Runtime.PythonException' in Python.Runtime.dll
+C
+C
+C
+A
+C
+A
+Major Sixth above C
+F
+C
+A
+F
+F-major triad
+Cc
+A
+F
+Major Third above F
+Fc
+A
+A
+Ac
+Exception thrown: 'Python.Runtime.PythonException' in Python.Runtime.dll
+'midi.exe' (CLR v4.0.30319: midi.exe): Loaded 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_es_b77a5c561934e089\mscorlib.resources.dll'. Module was built without symbols.
+The program '[23228] midi.exe' has exited with code 0 (0x0).

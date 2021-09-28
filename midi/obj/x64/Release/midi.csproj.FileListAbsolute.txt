@@ -26,5 +26,7 @@ D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\midi
 D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Melanchall.DryWetMidi.dll
 D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Runtime.dll
 D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Melanchall.DryWetMidi.xml
-D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Runtime.xml
 D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\obj\x64\Release\midi.csproj.CopyComplete
+D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Deployment.dll
+D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Included.dll
+D:\Documentos\Programación\Lenguajes\C#\midi_test_emb\midi\bin\x64\Release\Python.Runtime.xml
